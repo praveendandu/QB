@@ -1,7 +1,7 @@
 # QB
 1. What are various signals that can be sent to a process? what is standard kill? 
 2. How to change the cpu scheduling priority of a process? Different btwn priority and nice in top command?
-3. jobs? fg? bg?
+3. jobs? fg? bg? & ?
 4. How to run a background process? List all background processes?
 5. How to bring a background process to foreground? How to send it background again?
 6. How to restart a stopped background process?
