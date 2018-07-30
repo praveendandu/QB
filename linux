@@ -1,0 +1,3 @@
+# QB
+1. What are various signals that can be sent to a process? what is standard kill? 
+2. How to change the cpu scheduling priority of a process? Different btwn priority and nice in top command?
