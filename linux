@@ -1,7 +1,17 @@
 # QB
+Book - http://linux-training.be/linuxsys.pdf
 1. What are various signals that can be sent to a process? what is standard kill? 
 2. How to change the cpu scheduling priority of a process? Different btwn priority and nice in top command?
 3. jobs? fg? bg? & ?
 4. How to run a background process? List all background processes?
 5. How to bring a background process to foreground? How to send it background again?
 6. How to restart a stopped background process?
+
+================================
+1. how to list devices seen by kernel?
+2. how to create partiotions on disk?
+3. how to put file system on a partiotion?
+4. how to mount/unmount file system?
+5. how to list file systems drivers supported by kernel?
+6. how to list auto detected file systems? 
+
