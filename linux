@@ -10,8 +10,18 @@ Book - http://linux-training.be/linuxsys.pdf
 ================================
 1. how to list devices seen by kernel?
 2. how to create partiotions on disk?
-3. how to put file system on a partiotion?
+3. how to put file system on a partition? which command can be used?
 4. how to mount/unmount file system?
 5. how to list file systems drivers supported by kernel?
 6. how to list auto detected file systems? 
+7. Name few popular file system types?
+8. What is swap?
+9. Main difference btwn ext3 and ext4?
+10. How to check file system for errors?
+11. Can fsck command used against a mounted filesysetm? 
+12. What is a mount point?
+13. How to display mounted file systems?
+14. How to permanently mount a filesys on boot?
+
+
 
