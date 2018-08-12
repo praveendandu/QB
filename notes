@@ -1,0 +1,6 @@
+
+===================================================
+disk - partition - filesystem - mount to mount point
+commands - fdisk, mkfs, mount, unmount, fsck, df, du
+imp files - /proc/filesystems, /proc/mounts, /etc/filesystems, /etc/mtab, /etc/fstab
+======================================================
