@@ -7,3 +7,41 @@ logical volumes - https://askubuntu.com/questions/3596/what-is-lvm-and-what-is-i
 logical volumes are like dynamic partitions, they can span across multile hard disk devices. 
 create/resize/delete LVM "partitions" (they're called "Logical Volumes" in LVM-speak) from the command line while your Linux system is running
 ======================================================
+1. Hit power on button
+2. Processor is hardcoded to read from BIOS ROM where BIOS is present
+3. BIOS perfroms POST - Power on self test. Test computer hardware insuring hardware is properly functioning.
+4. bios to detect, identify and initialize hardware. The bios then goes looking for a boot device. 
+   this can be a floppy,hard disk, cdrom, network card or usb drive.
+5. BIOS executes mbr. mbr is the first sector on the primary partiotion. mbr contains either boot loader code and code that loads boot loader.
+6. boot loader then loads kernel into memory and starts executing it and passes control to it.
+7. Kernel starts exuecuting and starts init or systemd daemon process. 
+   init reads its config from  /etc/inittab which contains runlevel. use runlevel command to list previous and current run level.
+   systemd uses targets instead of run levels. use systemctl get-default to find default target
+8. init/systemd based on runlevel/target starts various services/daemons (long runnning background processes).
+
+# Default runlevel. The runlevels used are:
+#   0 - halt (Do NOT set initdefault to this)
+#   1 - Single user mode
+#   2 - Multiuser, without NFS (The same as 3, if you do not have networking)
+#   3 - Full multiuser mode
+#   4 - unused
+#   5 - X11
+#   6 - reboot (Do NOT set initdefault to this)
+
+List all targets - systemctl list-units --type=target
+
+# Run level 0 is matched by poweroff.target (and runlevel0.target is a symbolic link to poweroff.target).
+# Run level 1 is matched by rescue.target (and runlevel1.target is a symbolic link to rescue.target).
+# Run level 3 is emulated by multi-user.target (and runlevel3.target is a symbolic link to multi-user.target).
+# Run level 5 is emulated by graphical.target (and runlevel5.target is a symbolic link to graphical.target).
+# Run level 6 is emulated by reboot.target (and runlevel6.target is a symbolic link to reboot.target).
+# Emergency is matched by emergency.target.
+
+9. For system V services chkconfig --list lists various system services and their runlevel info
+   for systemd services  systemctl list-unit-files. Unit file of the service determines in which target a service can be run.
+10. Chagne runlevel/target
+    init <runlevel>
+    systemctl set-default <target>
+11. start/stop a service.
+    service start name
+    systemctl start name
