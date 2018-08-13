@@ -23,6 +23,7 @@ Book - http://linux-training.be/linuxsys.pdf
 13. How to display mounted file systems?
 14. How to permanently mount a filesys on boot?
 15. what is the advantage of using logical volumes?
-
+==========================
+What is Swap Space? https://www.centos.org/docs/5/html/5.2/Deployment_Guide/s1-swap-what-is.html
 
 
